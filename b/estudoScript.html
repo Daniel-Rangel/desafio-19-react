@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="br-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo escript</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: none;
+        }
+        form,
+        .IMC_calc{
+            margin: 50px auto 12px;
+            width: 30%;
+            padding: 20px;
+            background: rgb(58, 45, 45);
+            border-radius: 6px;
+            text-align: center;
+            color: #fff;
+        }
+
+        form div{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            text-align: initial;
+            font-weight: 600;
+        }
+
+        .msgErro{
+            text-transform: uppercase;
+            color: rgb(248, 212, 4);
+            font-weight: 600;
+            margin-top: 12px;
+        }
+
+        input{
+            padding: 4px;
+            border-radius: 4px;
+        }
+        input[type="button"],
+        .IMC_calc .calc_btn {
+            background-color: rgb(84, 84, 206);
+            padding: 8px;
+            border-radius: 4px;
+        }
+
+        .itens{
+            margin: 0 auto 12px;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .item{
+            background: rgb(58, 45, 45);
+            list-style: none;
+            padding: 8px;
+            border-radius: 4px;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        .IMC_calc form{
+            width: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+ <!--    <form action="" class="myForm">
+        <h1>Formulario</h1>
+        <p class="msgErro"></p>
+        <div>
+            <label for="nome-js">Nome</label>
+            <input type="text" class="nome-js"placeholder="Nome">
+            <label for="email-js">Email</label>
+            <input type="email" name="email" class="email-js" placeholder="Email">
+            <input type="button" value="Enviar" class="btn-js">
+        </div>
+    </form>
+
+    <ul class="itens">
+
+    </ul>
+ -->
+    <section class="IMC_calc">
+        <h2>Calculo do IMC</h2>
+        <form>
+            <input type="text" class="input_calc altura-js" placeholder="Altura">
+            <input type="text" class="input_calc peso-js" placeholder="Peso">
+            <button class="calc_btn">Calcular</button>
+        </form>
+        <p class="resposta-js"></p>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
