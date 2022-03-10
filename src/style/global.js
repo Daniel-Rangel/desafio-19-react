@@ -21,6 +21,11 @@ export const GlobalStyle = createGlobalStyle`
 
 body{
     font-family: 'Sora', sans-serif;
+    width: 100%;
+    max-width: var(--container);
+    margin: 0 auto;
 }
+
+
 
 `
