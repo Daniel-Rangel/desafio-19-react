@@ -5,7 +5,8 @@ export const Container = styled.a`
     padding: 0.8rem 1rem;
     background-color: var(--cor-azulClaro);
     border-radius: 50px;
-    max-width: 200px;
+    max-width: ${props => (props.size || '200px')};
+    min-width: ${props => (props.size || '200px')};
     text-decoration: none;
     color: #fff;
     text-align: center;

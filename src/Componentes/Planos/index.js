@@ -1,6 +1,8 @@
 import { CartaPlanos } from "../CartaPlanos"
 import { Content } from "./style"
 
+
+
 export function Planos (){
     return(
         <Content>

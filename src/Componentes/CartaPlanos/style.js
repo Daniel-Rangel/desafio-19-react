@@ -41,4 +41,9 @@ export const Content = styled.article`
         position: absolute;
         bottom: 8px;
     }
+
+    div{
+        display:flex;
+        justify-content: center;
+    }
 `

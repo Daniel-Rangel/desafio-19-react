@@ -11,7 +11,9 @@ export function CartaPlanos (){
             <h2>Bronze</h2>
             <span>28</span>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi quis euismod ultrices.</p>
-            <Botao valor={valorProps}/>
+            <div>
+                <Botao valor={valorProps}/>
+            </div>
         </Content>
     )
 }
