@@ -1,5 +1,6 @@
 import { Botao } from "../Botoes"
-import { Container} from "./styled"
+import { Container } from './style'
+import { LinkSubmit } from "../Botoes/style"
 
 const valorProps = {
     nome: 'Enviar',
@@ -13,7 +14,7 @@ export function FromMensagem (){
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi quis euismod ultrices.</p>
             <form action="#">
                 <input type="email" name="email"/>
-                <Botao valor={valorProps} size="50px"/>
+                <LinkSubmit valor={valorProps}/>
             </form>
         </Container>
     )

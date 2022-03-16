@@ -17,3 +17,5 @@ export function CartaPlanos (){
         </Content>
     )
 }
+
+/* outline: none; */

@@ -1,9 +1,15 @@
-import { Container } from "./style"
+import { Link } from "./style"
 
 
 
 export function Botao (props){
     return(
-        <Container href={props.valor.href} >{props.valor.nome}</Container>
+        <Link href={props.valor.href} >{props.valor.nome}</Link>
+    )
+}
+
+export function btnBotao (props){
+    return(
+        <Link href={props.valor.href} >{props.valor.nome}</Link>
     )
 }

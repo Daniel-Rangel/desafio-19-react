@@ -1,5 +1,6 @@
 import Imagem1 from '../../imagens/imagem1.svg'
 import { Botao } from '../Botoes'
+import { ContainerLg } from '../Container/styled'
 
 import { Container } from "./style"
 
@@ -11,7 +12,7 @@ const valorProps = {
 export function Banner (){
     return(
         <Container>
-            <div>
+            <ContainerLg>
                 <div>
                     <h1>Rachi, <br/> é tudo que você precisa em um só lugar.</h1>
                     <Botao valor={valorProps}/>
@@ -19,7 +20,7 @@ export function Banner (){
                 <figure>
                     <img src={Imagem1} alt="Banner"/>
                 </figure>
-            </div>  
+            </ContainerLg>  
         </Container>
     )
 }
