@@ -5,6 +5,7 @@ import rostoImg from '../../imagens/rosto_feliz.svg'
 import { Carta } from '../Cartas'
 
 import { Container } from './style'
+import { ContainerLg } from '../Container/styled'
 
 export function Funcao (){
     const cartas = [
@@ -28,11 +29,11 @@ export function Funcao (){
     return(
         <Container>
             <h2>Como funciona</h2>
-            <div>
+            <ContainerLg>
                 {cartas.map( carta => (
                     <Carta cartas={carta} />
                 ))}
-            </div>
+            </ContainerLg>
         </Container>
     )
 }

@@ -2,13 +2,13 @@ import { Link } from "./style"
 
 
 
-export function Botao (props){
+export function BtnLink (props){
     return(
         <Link href={props.valor.href} >{props.valor.nome}</Link>
     )
 }
 
-export function btnBotao (props){
+export function BtnSubmit (props){
     return(
         <Link href={props.valor.href} >{props.valor.nome}</Link>
     )

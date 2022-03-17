@@ -6,5 +6,7 @@ export const ContainerSm = styled.div`
 
 export const ContainerLg = styled.div`
     max-width: 1220px;
+    display: flex;
+    align-items:  center;
     margin: 0 auto;
 `

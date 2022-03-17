@@ -1,5 +1,6 @@
-import { Botao } from "../Botoes";
-import { Content } from "./style";
+import { BtnLink } from "../Botoes";
+import { ArticlePlanos } from "./style";
+
 const valorProps = {
     nome: 'Assinar',
     href: '#'
@@ -7,14 +8,14 @@ const valorProps = {
 
 export function CartaPlanos (){
     return(
-        <Content>
+        <ArticlePlanos>
             <h2>Bronze</h2>
             <span>28</span>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi quis euismod ultrices.</p>
             <div>
-                <Botao valor={valorProps}/>
+                <BtnLink valor={valorProps}/>
             </div>
-        </Content>
+        </ArticlePlanos>
     )
 }
 

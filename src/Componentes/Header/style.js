@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 
-export const Container = styled.header`
-    display: flex;
+export const HeaderStyle = styled.header`
+ /*    display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
     padding: 1rem 0;
 `
 
@@ -12,6 +12,7 @@ export const Logo = styled.div`
     display: flex;
     gap: 6px;
     align-items: center;
+    width: 100%;
 
     div{
         width: 18px;
@@ -45,10 +46,12 @@ export const Logo = styled.div`
 `
 
 export const Nav = styled.nav`
+        width: 100%;
     ul{
         display: flex;
         list-style: none;
         gap: 66px;
+        justify-content: space-evenly;
 
         a{
             text-decoration: none;

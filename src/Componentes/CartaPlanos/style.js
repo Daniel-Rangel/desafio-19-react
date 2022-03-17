@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Content = styled.article`
+export const ArticlePlanos = styled.article`
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
