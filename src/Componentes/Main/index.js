@@ -1,16 +1,16 @@
-import { Aplicacao } from "../Aplicativo"
+import { DownloadApp } from "../DownloadApp"
 import { Banner } from "../Banner"
 import { FromMensagem } from "../Form"
-import { Funcao } from "../Funcoes"
-import { Planos } from "../Planos"
+import { About } from "../About"
+import { Plans } from "../Plans"
 
 export function Main (){
     return(
         <>
             <Banner />
-            <Funcao />
-            <Aplicacao />
-            <Planos />
+            <About />
+            <DownloadApp />
+            <Plans />
             <FromMensagem />
         </>
     )

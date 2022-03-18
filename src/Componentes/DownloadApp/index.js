@@ -1,13 +1,13 @@
-import { SectionApps } from "./style"
+import { DownloadAppSection } from "./style"
 
 import androidImg from '../../imagens/android.svg'
 import appleImg from '../../imagens/apple.svg'
 import imagem2Img from '../../imagens/imagem2.svg'
 import { ContainerLg } from '../Container/styled'
 
-export function Aplicacao(){
+export function DownloadApp(){
     return(
-        <SectionApps>
+        <DownloadAppSection>
             <ContainerLg>
                 <div>
                     <div>
@@ -23,6 +23,6 @@ export function Aplicacao(){
                     </figure>
                 </div>
             </ContainerLg>
-        </SectionApps>
+        </DownloadAppSection>
     )
 }

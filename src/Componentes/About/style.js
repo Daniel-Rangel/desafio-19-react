@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Container = styled.section`
+export const AboutSection = styled.section`
     text-align: center;
     padding-top: 2rem;
     h2{

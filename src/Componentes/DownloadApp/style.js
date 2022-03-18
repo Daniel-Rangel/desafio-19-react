@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const SectionApps = styled.section`
+export const DownloadAppSection = styled.section`
     background-color: var(--fundo1);
 
     & div{

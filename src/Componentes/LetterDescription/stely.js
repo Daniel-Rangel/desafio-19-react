@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const CartaEstilo = styled.div`
+export const LetterDescriptionDiv = styled.div`
     width: 100%;
     max-width: 250px;
     display: flex;

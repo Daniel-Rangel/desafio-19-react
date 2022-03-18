@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Content = styled.section`
+export const PlansSection = styled.section`
     padding: 3.125rem 0;
     text-align: center;
     font-size: 1.125rem;

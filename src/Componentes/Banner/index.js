@@ -1,5 +1,5 @@
 import Imagem1 from '../../imagens/imagem1.svg'
-import { BtnLink } from '../Botoes'
+import { BtnLink } from '../Buttons'
 import { ContainerLg } from '../Container/styled'
 
 import { Container } from "./style"
