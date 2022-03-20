@@ -1,23 +1,20 @@
-import { Container } from './style'
+import { Emailsection } from './style'
 import { LinkSubmit } from "../Buttons/style"
-import { ContainerLg } from "../Container/styled"
-
-const valorProps = {
-    nome: 'Enviar',
-    href: '#'
-} 
+import { ContainerLgFlxcolumn } from "../Container/styled"
 
 export function FromMensagem (){
     return(
-        <ContainerLg>
-            <Container>
-                <h1>Contato</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi quis euismod ultrices.</p>
+        <Emailsection>
+            <ContainerLgFlxcolumn>
+                <div>
+                    <h1>Contato</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi quis euismod ultrices.</p>
+                </div>
                 <form action="#">
-                    <input type="email" name="email"/>
-                    <LinkSubmit valor={valorProps}/>
+                    <input type="email" name="email" placeholder='Seu Melhor email'/>
+                    <LinkSubmit type="submit" value='Enviar'/>
                 </form>
-            </Container>
-        </ContainerLg>
+            </ContainerLgFlxcolumn>
+        </Emailsection>
     )
 }

@@ -7,6 +7,7 @@ export const CardPlanArticle = styled.article`
     width: 32%;
     height: 471px;
     background-color: var(--fundo1);
+    
     margin: 10px 0;
     border-radius: 8px;
     padding: 2.1875rem;
@@ -42,8 +43,10 @@ export const CardPlanArticle = styled.article`
         bottom: 8px;
     }
 
-    div{
+    div.marg{
         display:flex;
         justify-content: center;
     }
 `
+
+/* background-color: ${props => (props.cardPlans.recommended ? '#293145' : '#EFF8FF')}; */

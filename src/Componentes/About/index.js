@@ -28,7 +28,7 @@ export function About (){
             texto: 'Lorem ipsum dolor sit amet consectetur'
         }
     ]
-    
+
     return(
         <AboutSection>
             <h2>Como funciona</h2>

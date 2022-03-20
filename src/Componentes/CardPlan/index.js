@@ -1,20 +1,21 @@
-import { BtnLink } from '../Buttons'
 import { CardPlanArticle } from "./style";
+import { BtnLink } from '../Buttons'
 
 const valorProps = {
     nome: 'Assinar',
     href: '#'
 } 
 
-export function CardPlan (){
+export function CardPlan (props){
     return(
         <CardPlanArticle>
-            <h2>Bronze</h2>
-            <span>28</span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi quis euismod ultrices.</p>
-            <div>
+            <h2>{props.cardPlans.classification}</h2>
+            <span>{props.cardPlans.value}</span>
+            <p>{props.cardPlans.text}</p>
+            <div className='marg'>
                 <BtnLink valor={valorProps}/>
             </div>
+            {console.log(props)}
         </CardPlanArticle>
     )
 }

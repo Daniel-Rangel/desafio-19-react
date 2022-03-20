@@ -10,3 +10,10 @@ export const ContainerLg = styled.div`
     align-items:  center;
     margin: 0 auto;
 `
+export const ContainerLgFlxcolumn = styled.div`
+    max-width: 1220px;
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    margin: 0 auto;
+`
