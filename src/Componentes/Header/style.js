@@ -65,4 +65,8 @@ export const Nav = styled.nav`
             }
         }
     }
+
+    @media(max-width: 430px ){
+        display: none;
+    }
 `

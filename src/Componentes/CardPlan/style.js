@@ -6,23 +6,40 @@ export const CardPlanArticle = styled.article`
     justify-content: space-evenly;
     width: 32%;
     height: 471px;
-    background-color: var(--fundo1);
-    
+    background-color: ${props => ( props.theme.recommended ? '#293145' : '#EFF8FF')};
     margin: 10px 0;
     border-radius: 8px;
     padding: 2.1875rem;
     font-size: 0.9rem;
+    
 
     h2{
-        font-size: 1.5rem;
+        font-size: 1.9rem;
         font-weight: 600;
+        color: ${props => ( props.theme.recommended ? '#fff' : '#293145')};
+        position: relative;
+    }
+
+    h2::after{
+        display: ${props => ( props.theme.recommended ? 'block' : 'none')};
+        content: 'PREFERIDO';
+        position: absolute;
+        font-size: 0.7rem;
+        font-weight: 300;
+        background-color: var(--cor-azulClaro);
+        width: 122px;
+        border-radius: 50px;
+        padding: 4px ;
+        left: 50%;
+        top: 42px;
+        transform: translate(-50%, 0);
     }
     
     span{
         display: block;
         font-size: 3.125rem;
         font-weight: 700;
-        color: var(--cor-azulEscuro);
+        color: ${props => ( props.theme.recommended ? '#fff' : '#293145')} ;
         position: relative;
         width: 118px;
         margin: 0 auto;
@@ -43,10 +60,21 @@ export const CardPlanArticle = styled.article`
         bottom: 8px;
     }
 
+    p{
+        color: ${props => ( props.theme.recommended ? '#fff' : '#293145')} ;
+    }
+
     div.marg{
         display:flex;
         justify-content: center;
     }
-`
 
-/* background-color: ${props => (props.cardPlans.recommended ? '#293145' : '#EFF8FF')}; */
+    @media(max-width: 768px ){
+        width: 50%;
+
+        div.marg{
+            align-content: center;
+        }
+    }
+    
+`

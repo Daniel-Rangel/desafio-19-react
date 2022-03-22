@@ -3,19 +3,19 @@ import { BtnLink } from '../Buttons'
 
 const valorProps = {
     nome: 'Assinar',
-    href: '#'
+    href: '#',
+    bg: '#000'
 } 
 
 export function CardPlan (props){
     return(
-        <CardPlanArticle>
+        <CardPlanArticle theme={props.cardPlans} >
             <h2>{props.cardPlans.classification}</h2>
             <span>{props.cardPlans.value}</span>
             <p>{props.cardPlans.text}</p>
             <div className='marg'>
                 <BtnLink valor={valorProps}/>
             </div>
-            {console.log(props)}
         </CardPlanArticle>
     )
 }

@@ -23,5 +23,12 @@ export const PlansSection = styled.section`
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+
+        @media(max-width: 768px ){
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
+
 `

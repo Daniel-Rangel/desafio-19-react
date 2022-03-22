@@ -38,13 +38,30 @@ export const DownloadAppSection = styled.section`
                     flex-direction: row;
                     justify-content: flex-start;
                     gap: 18px;
+
+                    @media(max-width: 768px ){
+                        justify-content: center;
+                    }
                     
                 }
+
+                @media(max-width: 768px ){
+                    align-items: center;
+                }
             }
+
         }
 
         figure{
             margin: 38px 0;
         }
+
+        @media(max-width: 768px ){
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
+
+    
 `

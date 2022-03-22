@@ -25,4 +25,25 @@ export const Container = styled.section`
             }
         }
     }
+
+    @media(max-width: 430px ){
+        div{
+            div{
+                &:nth-child(1){
+                    h1{
+                        line-height: 40px;
+                        font-size: 1.8rem;
+                    }
+                }
+            } 
+        }
+        
+
+        figure{
+            img{
+                width: 100%;
+            }
+        }
+    }
+
 `  

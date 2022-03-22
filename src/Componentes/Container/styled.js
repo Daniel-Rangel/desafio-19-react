@@ -9,6 +9,17 @@ export const ContainerLg = styled.div`
     display: flex;
     align-items:  center;
     margin: 0 auto;
+
+    @media(max-width: 1024px ){
+        padding: 2rem;
+    }
+
+    @media(max-width: 768px ){
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
 `
 export const ContainerLgFlxcolumn = styled.div`
     max-width: 1220px;
@@ -16,4 +27,9 @@ export const ContainerLgFlxcolumn = styled.div`
     flex-direction: column;
     align-items:  center;
     margin: 0 auto;
+
+    @media(max-width: 768px ){
+        flex-direction: column;
+        justify-content: center;
+    }
 `

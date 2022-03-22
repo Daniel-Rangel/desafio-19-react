@@ -8,21 +8,21 @@ const cardPlans = [
         classification: 'Bronze',
         value: 28,
         text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi quis euismod ultrices.',
-        recommended: false,
+        recommended: false
     },
     {
         id: 2,
         classification: 'Prata',
         value: 57,
         text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi quis euismod ultrices.',
-        recommended: true,
+        recommended: true
     },
     {
         id: 3,
         classification: 'Ouro',
         value: 94,
         text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi quis euismod ultrices.',
-        recommended: false,
+        recommended: false
     }
 ]
 
