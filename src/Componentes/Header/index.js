@@ -1,10 +1,16 @@
-import { HeaderStyle , Logo, Nav } from "./style"
+import { HeaderStyle , Logo, MenuHamburguerSpan, Nav } from "./style"
 import { ContainerLg } from '../Container/styled'
+import { useState } from "react"
 
 export function Header (){
+    const [ show , setShow] = useState(false)
+
+    const showMenuHamburguer = () =>{
+        setShow(!show)
+    }
     return(
         <HeaderStyle>
-            <ContainerLg>
+            <ContainerLg className="mobileHeader">
                 <Logo>
                     <div>
                         <span></span>
@@ -20,6 +26,7 @@ export function Header (){
                         <li><a href="#">Contato</a></li>
                     </ul>
                 </Nav>
+                <MenuHamburguerSpan onClick={showMenuHamburguer} show={show}></MenuHamburguerSpan>
             </ContainerLg>
         </HeaderStyle>
     )

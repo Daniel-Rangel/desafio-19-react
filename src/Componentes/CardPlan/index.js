@@ -10,7 +10,7 @@ const valorProps = {
 export function CardPlan (props){
     return(
         <CardPlanArticle theme={props.cardPlans} >
-            <h2>{props.cardPlans.classification}</h2>
+            <h2 className="cardH2">{props.cardPlans.classification}</h2>
             <span>{props.cardPlans.value}</span>
             <p>{props.cardPlans.text}</p>
             <div className='marg'>

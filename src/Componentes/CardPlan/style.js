@@ -13,10 +13,11 @@ export const CardPlanArticle = styled.article`
     font-size: 0.9rem;
     
 
-    h2{
-        font-size: 1.9rem;
+    h2.cardH2{
+        font-size: 1.8rem;
         font-weight: 600;
         color: ${props => ( props.theme.recommended ? '#fff' : '#293145')};
+        ${props =>  console.log(props.theme.recommended )}
         position: relative;
     }
 

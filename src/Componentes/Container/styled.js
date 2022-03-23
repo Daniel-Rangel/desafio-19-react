@@ -18,6 +18,9 @@ export const ContainerLg = styled.div`
         flex-direction: column;
         justify-content: center;
 
+        &.mobileHeader{
+            flex-direction: row;
+        }
     }
 
 `
