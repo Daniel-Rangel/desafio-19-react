@@ -36,6 +36,7 @@ export const DownloadAppSection = styled.section`
                 div{
                     display: flex;
                     flex-direction: row;
+                    flex-wrap: wrap;
                     justify-content: flex-start;
                     gap: 18px;
 
@@ -47,6 +48,14 @@ export const DownloadAppSection = styled.section`
 
                 @media(max-width: 768px ){
                     align-items: center;
+
+                    h2{
+                        text-align: center;
+                    }
+
+                    p{
+                        text-align: center;
+                    }
                 }
             }
 
@@ -54,6 +63,9 @@ export const DownloadAppSection = styled.section`
 
         figure{
             margin: 38px 0;
+            img{
+                width: 100%;
+            }
         }
 
         @media(max-width: 768px ){

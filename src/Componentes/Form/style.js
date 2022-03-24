@@ -37,5 +37,11 @@ export const Emailsection = styled.section`
                 
             }
         }
+
+        @media (max-width: 425px) {
+            flex-direction: column;
+            
+            align-items: center;
+        }
     }
 `

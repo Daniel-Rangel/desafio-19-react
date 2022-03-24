@@ -8,6 +8,7 @@ export function Header (){
     const showMenuHamburguer = () =>{
         setShow(!show)
     }
+
     return(
         <HeaderStyle>
             <ContainerLg className="mobileHeader">
@@ -18,10 +19,10 @@ export function Header (){
                     </div>
                     <h2>Rachi</h2>
                 </Logo>
-                <Nav>
+                <Nav show={show}>
                     <ul>
                         <li><a href="#">Funcionalidades</a></li>
-                        <li><a href="./estudoScript.html">App</a></li>
+                        <li><a href="#">App</a></li>
                         <li><a href="#">Planos</a></li>
                         <li><a href="#">Contato</a></li>
                     </ul>

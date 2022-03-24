@@ -68,7 +68,7 @@ export const Nav = styled.nav`
     }
 
     @media (max-width: 768px) {
-        display: ${props => props.show? console.log(props.show) : 'none'};
+        display: ${props => props.show? '' : 'none'};
         position: absolute;
         top: 0;
         left: 0vw;
@@ -86,48 +86,49 @@ export const Nav = styled.nav`
         }
 
     }
-
-    @media(max-width: 430px ){
-        display: none;
-    }
 `
 
 export const MenuHamburguerSpan = styled.span`
-    display: flex;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    transition: all 0.5s ease-out;
+    display: none;
 
-    &::before{
-        content: '';
-        position: absolute;
-        width: 24px;
-        height: 2px;
-        background-color: #293145;
-        transform: translateY(-10px);
-        box-shadow: 0 10px 0 #293145;
-    }
+    @media (max-width: 768px) {
+        display: flex;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        transition: all 0.5s ease-out;
 
-    &::after{
-        content: '';
-        position: absolute;
-        width: 24px;
-        height: 2px;
-        background-color: #293145;
-        transform: translateY(10px);
-    }
+        &::before{
+            content: '';
+            position: absolute;
+            width: 24px;
+            height: 2px;
+            background-color: #293145;
+            transform: translateY(-10px);
+            box-shadow: 0 10px 0 #293145;
+        }
 
-    &::before${ props => props.show ? '' : 'active'}{
-        transform: translateY(0px) rotate(45deg);
-        box-shadow: 0 0 0 #293145;
-    }
+        &::after{
+            content: '';
+            position: absolute;
+            width: 24px;
+            height: 2px;
+            background-color: #293145;
+            transform: translateY(10px);
+        }
 
-    &::after${ props => props.show ? '' : 'active' }{
-        transform: translateY(0px) rotate(-45deg);
-    }
+        &::before${ props => props.show ? '' : 'active'}{
+            transform: translateY(0px) rotate(45deg);
+            box-shadow: 0 0 0 #293145;
+        }
+
+        &::after${ props => props.show ? '' : 'active' }{
+            transform: translateY(0px) rotate(-45deg);
+        }
+
+    }   
 
 `

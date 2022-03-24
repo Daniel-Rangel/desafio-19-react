@@ -77,5 +77,13 @@ export const CardPlanArticle = styled.article`
             align-content: center;
         }
     }
+
+    @media(max-width: 425px ){
+        width: 90%;
+
+        div.marg{
+            align-content: center;
+        }
+    }
     
 `

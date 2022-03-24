@@ -26,6 +26,12 @@ export const Container = styled.section`
         }
     }
 
+    figure{
+        img{
+            width: 100%;
+        }
+    }
+
     @media(max-width: 430px ){
         div{
             div{
